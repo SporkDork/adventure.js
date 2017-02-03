@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>adventure.js</title>
+		<script src="variables.js"></script>
+		<script src="utils.js"></script>
+		<script src="classes.js"></script>
+		<script src="player.js"></script>
+		<script src="items/key.js"></script>
+		<script src="items/sword.js"></script>
+		<script src="items/burn_heal.js"></script>
+		<script src="items/tomato_sauce.js"></script>
+		<script src="enemies/gablin.js"></script>
+		<script src="rooms/room_1.js"></script>
+		<script src="rooms/room_2.js"></script>
+		<script src="rooms/room_3.js"></script>
+		<script src="main.js"></script>
+		<style>
+			#title {
+				position: relative;
+				font-size: 250%;
+			}
+			table.playerTable {
+				position: absolute;
+				font-size: 125%;
+				width: 20%;
+				height: 40%;
+				left: 5%;
+				right: 75%;
+			}
+			table.enemyTable {
+				position: absolute;
+				font-size: 125%;
+				width: 20%;
+				height: 40%;
+				left: 75%;
+				right: 5%;
+			}
+			#inputForm {
+				position: absolute;
+				width: 40%;
+				left: 30%;
+			}
+			#commandArea {
+				position: relative;
+				width: 100%;
+				font-size: 150%;
+				text-align: center;
+			}
+			#outputArea {
+				position: relative;
+				font-size: 125%;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="playerTable">
+			<td id="playerStatus" align="center"></td>
+		</table>
+		<table class="enemyTable">
+			<td id="enemyStatus" align="center"></td>
+		</table>
+		<br/><br/>
+		<p id="title" align="center">adventure.js</p>
+		<br/>
+		<span id="inputForm">
+			<input id="commandArea" name="command" type="text" size="40" autofocus="autofocus" onkeypress="keyPress(event)"></input>
+		</span>
+		<br/><br/><br/>
+		<p id="outputArea" align="center"></p>
+		<script>getStatus();</script>
+	</body>
+</html>
