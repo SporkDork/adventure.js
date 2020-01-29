@@ -1,5 +1,5 @@
 # adventure.js
-A simple text-based adventure game engine written in JavaScript
+*A simple text-based adventure game engine written in JavaScript*
 
 This project was originally to be handled by my teacher, but he decided to give this task to me instead.
 The scope of the project was a custom text-based game engine, where the students would design the rooms and enemies that the player would encounter.
